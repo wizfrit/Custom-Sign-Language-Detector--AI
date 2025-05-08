@@ -7,8 +7,6 @@ This is a desktop-based real-time American Sign Language (ASL) word-level transl
 ##  Project Structure
 
 \`\`\`
-Word_Level_Translator/
-│
 ├── record.py           # Record gesture frames via webcam
 
 ├── process.py          # Extract keypoints from recorded frames
