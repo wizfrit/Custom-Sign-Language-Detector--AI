@@ -1,4 +1,4 @@
-echo "# Sign Language Word-Level Translator
+# Sign Language Word-Level Translator 
 
 This is a desktop-based real-time American Sign Language (ASL) word-level translator. It uses **MediaPipe** for hand gesture detection, **LSTM** for sequence modeling, and **OpenCV** for webcam input. The model recognizes basic ASL words like **\"hello\"**, **\"thanks\"**, **\"yes\"**, and **\"no\"**.
 
@@ -10,10 +10,15 @@ This is a desktop-based real-time American Sign Language (ASL) word-level transl
 Word_Level_Translator/
 │
 ├── record.py           # Record gesture frames via webcam
+
 ├── process.py          # Extract keypoints from recorded frames
+
 ├── train.py            # Train LSTM model on processed data
+
 ├── predict.py          # Use webcam to predict gestures in real time
+
 ├── requirements.txt    # Required libraries
+
 └── README.md           # Project documentation
 \`\`\`
 
