@@ -1,12 +1,11 @@
 # Sign Language Word-Level Translator 
 
-This is a desktop-based real-time American Sign Language (ASL) word-level translator. It uses **MediaPipe** for hand gesture detection, **LSTM** for sequence modeling, and **OpenCV** for webcam input. The model recognizes basic ASL words like **\"hello\"**, **\"thanks\"**, **\"yes\"**, and **\"no\"**.
+This is a desktop-based real-time Sign Language word-level translator. It uses **MediaPipe** for hand gesture detection, **LSTM** for sequence modeling, and **OpenCV** for webcam input. The model recognizes basic ASL words like **\"hello\"**, **\"thanks\"**, **\"yes\"**, and **\"no\"**.
 
 ---
 
 ##  Project Structure
 
-\`\`\`
 ├── record.py           # Record gesture frames via webcam
 
 ├── process.py          # Extract keypoints from recorded frames
@@ -18,7 +17,6 @@ This is a desktop-based real-time American Sign Language (ASL) word-level transl
 ├── requirements.txt    # Required libraries
 
 └── README.md           # Project documentation
-\`\`\`
 
 ---
 
@@ -26,23 +24,17 @@ This is a desktop-based real-time American Sign Language (ASL) word-level transl
 
 ### 1. Clone the Repository
 
-\`\`\`bash
 git clone https://github.com/yourusername/word-level-translator.git
 cd word-level-translator
-\`\`\`
 
 ### 2. Create and Activate Virtual Environment (Optional but Recommended)
 
-\`\`\`bash
 python -m venv venv
 source venv/bin/activate    # On Windows: venv\\Scripts\\activate
-\`\`\`
 
 ### 3. Install Dependencies
 
-\`\`\`bash
 pip install -r requirements.txt
-\`\`\`
 
 ---
 
@@ -51,47 +43,36 @@ pip install -r requirements.txt
 ### Step 1: Collect Data
 
 Record gesture frames using:
-\`\`\`bash
 python record.py
-\`\`\`
 This will save frames into the format:
-\`\`\`
 data/<word>/<sequence>/<frame>.jpg
-\`\`\`
+
 
 ### Step 2: Process Data
 
-Extract keypoints from the collected images:
-\`\`\`bash
-python process.py
-\`\`\`
+Extract keypoints from the collected images:    "python process.py"
+
 
 ### Step 3: Train the Model
 
-Train the LSTM-based gesture recognition model:
-\`\`\`bash
-python train.py
-\`\`\`
+Train the LSTM-based gesture recognition model:  "python train.py"
+
 
 ### Step 4: Run Real-Time Prediction
 
-Use your webcam for live gesture translation:
-\`\`\`bash
-python predict.py
-\`\`\`
+Use your webcam for live gesture translation:   "python predict.py"
 
 ---
+## Important Note
 If you have already recorded the gesture data and nothing new has been added, you can skip the processing and training steps — just run the prediction script.
 
 However, if you record new gesture data or modify the existing dataset, make sure to run the processing and training scripts again before predicting. This ensures the model includes the updated data.
 
 ---
-##  Notes
+##  Requirements
 
 - Ensure your **webcam is working**.
-- Dependencies must be installed from \`requirements.txt\`.
-- Training and prediction scripts assume data is in \`data/\` and processed output is stored in \`MP_Data/\` (you can modify paths as needed).
-
+- Dependencies must be installed from requirements.txt.
 ---
 
 ##  Technologies Used
