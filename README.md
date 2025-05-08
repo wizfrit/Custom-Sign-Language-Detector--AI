@@ -25,12 +25,8 @@ This is a desktop-based real-time Sign Language word-level translator. It uses *
 ### 1. Clone the Repository
 
 git clone https://github.com/yourusername/word-level-translator.git
+
 cd word-level-translator
-
-### 2. Create and Activate Virtual Environment (Optional but Recommended)
-
-python -m venv venv
-source venv/bin/activate    # On Windows: venv\\Scripts\\activate
 
 ### 3. Install Dependencies
 
